@@ -49,6 +49,8 @@ public class CastingSample {
 		int numBit = Integer.bitCount(num);
 		
 		System.out.println(num + "의 2진수에 포함된 1의 갯수 :  " + numBit);
+		
+		// static이 붙은 메소드는 클래스명.메소드명() 으로 사용됨
 	}
 
 	
