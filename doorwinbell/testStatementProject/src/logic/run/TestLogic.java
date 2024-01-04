@@ -1,8 +1,6 @@
 package logic.run;
 
-import logic.testif.IfElseSample;
-import logic.testif.IfSample;
-import logic.testif.MultiIfSample;
+import logic.testswitch.SwitchSample;
 
 public class TestLogic {
 
@@ -19,11 +17,19 @@ public class TestLogic {
 //		samp.testIfElse3();
 //		samp.printMax();
 		
-		MultiIfSample samp = new MultiIfSample();
+//		MultiIfSample samp = new MultiIfSample();
 //		samp.testThreeMax();
 //		samp.testScoreGrade();
 //		samp.testCharacter();
-		samp.testTwoMaxEqual();
+//		samp.testTwoMaxEqual();
+		
+		SwitchSample samp = new SwitchSample();
+//		samp.test1();
+//		samp.calculator();
+//		samp.calculator2();
+		samp.calculator2ChangeIfElse();
+		
+		
 	}
 
 }
