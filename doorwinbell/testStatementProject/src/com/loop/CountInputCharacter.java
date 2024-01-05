@@ -8,7 +8,7 @@ public class CountInputCharacter {
 	Scanner sc = new Scanner(System.in);
 	
 	public void countInputCharacter() {
-		int count = 0;
+		int count = 0, i;
 		
 		System.out.print("문자열 입력 : ");
 		String str = sc.next();		
@@ -18,7 +18,7 @@ public class CountInputCharacter {
 		
 		char[] strArr = new char[str.length()];
 		
-		for(int i = 0; i< str.length();i++) {
+		for(i = 0; i< str.length();i++) {
 			if(!Character.isAlphabetic(str.charAt(i))) {
 				System.out.println("영문자가 아님.");
 				break;
@@ -30,7 +30,36 @@ public class CountInputCharacter {
 			}
 		}
 //		System.out.println(Arrays.toString(strArr));
-		System.out.println(ch + "가 포함된 갯수 : " + count);
+		if(i == str.length()) {
+			System.out.println(ch + "가 포함된 갯수 : " + count);			
+		}
+		
+		// 실습문제 4
+//		public void countInputCharacter() {
+//			
+//			System.out.print("문자열 입력 : ");
+//			String inputValue = sc.next();
+//			System.out.print("문자 입력 : ");
+//			char findCharacter = sc.next().charAt(0);
+//
+//			int count = 0, index;
+//			for (index = 0; index < inputValue.length(); index++) {
+//				char c = inputValue.charAt(index);
+//
+//				if (!Character.isAlphabetic(c)) {
+//					// if(!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))){
+//					System.out.println("영문자가 아닙니다.");
+//					break; // 알파벳문자가 아니면 강제 반복 종료
+//				}
+//
+//				if (c == findCharacter)
+//					count++;
+//			}
+//
+//			if (index == inputValue.length())
+//				System.out.println("포함된 갯수 : " + count);
+//
+//		}
 		
 		
 		
