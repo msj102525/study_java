@@ -55,6 +55,7 @@ public class NonStaticMethodSample {
         // 현재 시간 출력
         String formattedTime = dateFormat.format(date);
         System.out.println("현재 시간: " + formattedTime);
+		
 	}
 
 	public void testRandom() {
