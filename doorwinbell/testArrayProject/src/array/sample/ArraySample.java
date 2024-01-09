@@ -11,12 +11,46 @@ import java.util.Scanner;
 
 public class ArraySample {
 	// 기본자료형 확인용 기능 제공
-	
+
 	// 자바는 static(정적) 메모리와 heap(자유) 메모리에 할당되는 변수방에는
 	// 초기값 지정이 없으면 jvm이 준비한 기본값(default value)
-	
+
+	// static은 멤버변수(Field), 멤버함수(Metod)에만 사용할 수 있음
+	// 필드선언형식 : 접근제한자 [예약어] 자료형 변수명 [= 초기값];
+	private static boolean flag;
+	private static char level;
+	private static int score;
+	private static double point;
+	private static String str;
+	// 프로그램이 실행될 때 (main() 메소드가 start 될 때) 자동으로 static 메모리에 할당됨
+	// main() 메소드가 종료될 때(프로그램이 끝날 때) 자동으로 소멸됨(제거됨)
+
+	public void testStaticField() {
+		System.out.println("static 메모리에 할당된 필드 초기값 확인");
+		System.out.println("flag : " + flag); // false
+		System.out.println("level : " + level); // '\u0000'
+		System.out.println("score : " + score); // 0
+		System.out.println("point : " + point);// 0.0
+		System.out.println("str : " + str); // null
+	}
+
 	public void testDefaultValue() {
-		
+		// 지역변수(Local Variable) : 메소드 안, 제어문 안에서 만들어진 변수
+		// 선언형식 : [예약어] 자료형 변수명 = 초기값;
+		// 예약어는 final만 사용할 수 있음 => final 자료형 변수명 = 초기값;
+
+		boolean[] flags = new boolean[2];
+		char[] codes = new char[2];
+		int[] values = new int[2];
+		double[] points = new double[2];
+		String[] strValues = new String[2]; // 클래스를 자료형으로 만든 변수(레퍼런스변수임)
+
+		// 기본값 기록 확인
+		for (int i = 0; i < 2; i++) {
+			System.out.println(i + "번째 방의 기록값 : " + flags[i] + ", " + codes[i] + ", " + values[i] + ", " + points[i]
+					+ ", " + strValues[i]);
+		}
+
 	}
 
 	public void testArray1() {
@@ -97,21 +131,53 @@ public class ArraySample {
 		// 자료형[] 배열명 = {초기값, 초기값, 초기값 ...., 초기값};
 //		int[] ar = { 12, 23, 34, 45, 56 };
 		// int[] ar; // 레퍼런스 선언과 초기화를 분리할 수없음
-		// ar = {12, 23, 34, 45, 56}; 
-		
+		// ar = {12, 23, 34, 45, 56};
+
 		// 자료형[] 배열명 = new 자료형[]{초기값, 초기값, 초기값, ..., 초기값};
 		// 초기값의 갯수가 할당될 방갯수가 되므로, 자료형[] 안에 첨자 사용하면 안됨;
 		int[] ar;
 		ar = new int[] { 12, 23, 34, 45, 56 };
 		System.out.println("ar.length :" + ar.length);
-		
-		for(int i = 0; i< ar.length; i++) {
+
+		for (int i = 0; i < ar.length; i++) {
 			System.out.println(ar[i] + "\t");
 		} // for
 		System.out.println();
 
 	}
-	
-	
+
+	public void arrayCopy() {
+		// 배열 복사
+		int[] ar = { 12, 54, 27, 43, 77 };
+
+		int[] copyAr = ar; // 얕은 복사(Shallow Copy) : 주소만 복사함
+
+		int[] br = new int[ar.length];
+		for (int i = 0; i < br.length; i++) {
+			br[i] = ar[i]; // 깊은 복사(Deep Copy) : 새로 할당해서 값들을 복사함
+		}
+
+		int[] cr = new int[ar.length];
+		System.arraycopy(ar, 0, cr, 0, ar.length);
+		// 주의사항 : 배열의 인덱스 범위를 벗어나지 않도록 할 것
+//		System.arraycopy(ar, 0, cr, 1, ar.length);
+
+		// 출력 확인
+		for (int i = 0; i < ar.length; i++) {
+			System.out.print(ar[i] + "   ");
+		}
+		System.out.println();
+		
+		for (int i = 0; i < br.length; i++) {
+			System.out.print(br[i] + "   ");
+		}
+		System.out.println();
+		
+		for (int i = 0; i < cr.length; i++) {
+			System.out.print(cr[i] + "   ");
+		}
+		System.out.println();
+
+	}
 
 }

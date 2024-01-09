@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"array.silsub.model","c":"Sample","l":"munjae1()"},{"p":"array.silsub.model","c":"Sample","l":"Sample()","u":"%3Cinit%3E()"}];updateSearchResults();
