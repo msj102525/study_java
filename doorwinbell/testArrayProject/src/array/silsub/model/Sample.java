@@ -107,66 +107,56 @@ public class Sample {
 		}
 	} // munjae2 ()
 
-//	public void munjae4() {
-//		int[][] arr = new int[3][7];
-//		int stNum = 0, kor = 0, mat = 0, eng = 0, korAvg = 0, matAvg = 0, engAvg = 0;
-//
-//		for (int i = 0; i < arr.length; i++) {
-//
-//			int tot = 0;
-//			int avg = tot / 3;
-//
-//			for (int j = 0; j < arr[i].length; j++) {
-//
-//				if (j == 0) {
-//					System.out.print("학생번호 : ");
-//					stNum = arr[i][1] = sc.nextInt();
-//				}
-//				if (j == 1) {
-//					System.out.print("국어 점수 : ");
-//					arr[i][1] = sc.nextInt();
-//					kor = arr[i][1];
-//					korAvg += kor;
-//				}
-//				if (j == 2) {
-//					System.out.print("수학 점수 : ");
-//					arr[i][2] = sc.nextInt();
-//					mat = arr[i][2];
-//					matAvg += mat;
-//				}
-//				if (j == 3) {
-//					System.out.print("영어 점수 : ");
-//					arr[i][3] = sc.nextInt();
-//					eng = arr[i][3];
-//					engAvg += eng;
-//				}
-//				if (j == 4) {
-//					arr[i][4] = tot = kor + mat + eng;
-//				}
-//				if (j == 5) {
-//					arr[i][5] = avg;
-//				}
-//				if (i == arr[i].length - 1) {
-//					arr[i][0] = korAvg;
-//					arr[i][1] = matAvg;
-//					arr[i][2] = engAvg;
-//				}
-//			} // for2
-//			System.out.println();
-//			System.out.print("국어 점수 : " + kor);
-//			System.out.print("수학 점수 : " + mat);
-//			System.out.print("영어 점수 : " + eng);
-//			System.out.println();
-//
-//		} // for1
-//		System.out.println();
-//
-//
-//		System.out.print("국어 평균 : " + korAvg / 3);
-//		System.out.print("수학 평균 : " + matAvg / 3);
-//		System.out.print("영어 평균 : " + engAvg / 3);
-//
-//	}
+	//실습문제 4 : 강사님   code
+//		public void munjae4() {
+//			int[][] score = new int[7][7];
+//					
+//			for(int i = 0; i < score.length - 1; i++){					
+//				System.out.print("학생번호 : ");
+//				score[i][0] = sc.nextInt();
+//				System.out.print("국어 : ");
+//				score[i][1] = sc.nextInt();
+//				System.out.print("영어 : ");
+//				score[i][2] = sc.nextInt();
+//				System.out.print("수학 : ");
+//				score[i][3] = sc.nextInt();
+//				
+//				for(int j = 1; j < score[i].length - 3; j++) {				
+//					score[i][4] += score[i][j];	//학생 총점 계산				
+//				}			
+//				score[i][5] = score[i][4] / 3;	//학생 평균 계산			
+//			}
+//			
+//			int korTot = 0, engTot = 0, matTot = 0;
+//			for(int k = 0; k < score.length - 1; k++){		//과목별 평균계산
+//				korTot += score[k][1];  //국어총점
+//				engTot += score[k][2];  //영어총점
+//				matTot += score[k][3];	 //수학총점		
+//			}
+//			
+//			score[6][1] = korTot / 6;
+//			score[6][2] = engTot / 6;
+//			score[6][3] = matTot / 6;
+//			
+//			//등수 처리
+//			for(int i = 0; i < score.length - 1; i++){
+//				score[i][6] = 1;  //자신을 1등으로 지정
+//				for(int j = 0; j < score[i].length; j++){
+//					if(score[i][5] < score[j][5])	//자신의 평균이 다른 평균보다 작으면
+//						score[i][6]++;	//등수를 1 증가 처리
+//				}			
+//			}
+//			
+//			//출력 확인
+//			System.out.printf("%4s%4s%4s%4s%4s%4s%4s \n", 
+//					      "번호", "국어", "영어", "수학", "총점", "평균", "등수");  //제목행 출력
+//			for(int i = 0; i < score.length; i++){
+//				for(int j = 0; j < score[i].length; j++)
+//					System.out.printf("%5d", score[i][j]);
+//				System.out.println();
+//			}
+//			
+//		}
 
 	public void munjae4() {
 		Scanner sc = new Scanner(System.in);
@@ -212,7 +202,8 @@ public class Sample {
 						}
 					}
 				}
-		
+				
+		// 출력
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
 				System.out.print(arr[i][j] + "\t" + "\t");
@@ -229,11 +220,10 @@ public class Sample {
 			engAvg += arr[i][3];
 		}
 		
-		
-
 		System.out.print("국어 평균 : " + korAvg / arr.length);
 		System.out.print("수학 평균 : " + matAvg / arr.length);
 		System.out.print("영어 평균 : " + engAvg / arr.length);
 
 	}
+	
 }// class
