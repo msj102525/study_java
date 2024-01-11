@@ -21,7 +21,6 @@ public class EmpTest {
 			System.out.print("번호 입력 : ");
 			num = sc.nextInt();
 			
-			
 			switch(num) {
 			case 1:
 				emp.empInput();
@@ -58,7 +57,6 @@ public static void modifyMenu() {
 			System.out.print(" 번호 입력 : ");
 			System.out.println();
 			num = sc.nextInt();
-			
 			
 			switch(num) {
 			case 1:
