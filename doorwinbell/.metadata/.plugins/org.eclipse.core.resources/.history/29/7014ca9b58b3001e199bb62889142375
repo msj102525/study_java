@@ -1,0 +1,12 @@
+package Inheritance.sample;
+
+public class Point {
+	// Field
+	private double x;
+	private double y;
+	
+	// Constructor
+	public Point() {
+		System.out.println("기본생성자 this : " + this.hashCode());
+	}
+}

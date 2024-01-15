@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;sex&apos; in &apos;var.parctice.Practice.myProfile()&apos; to &apos;gender&apos;&#x0D;&#x0A;- Original project: &apos;practiceVariable&apos;&#x0D;&#x0A;- Original element: &apos;var.parctice.Practice.myProfile().sex&apos;&#x0D;&#x0A;- Renamed element: &apos;sex&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;sex&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;var.parctice{Practice.java[Practice~myProfile@sex!297!319!304!306!QString;!0!false" name="gender" references="true" stamp="1703816970966" version="1.0"/>
+</session>
