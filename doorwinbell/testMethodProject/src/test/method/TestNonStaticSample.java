@@ -13,7 +13,7 @@ public class TestNonStaticSample {
 //		System.out.println(nSample.alphabette());
 //		System.out.println(nSample.mySubString("hellow", 0, 4));
 		
-		
+		System.out.println("hi");
 	}
 
 }
