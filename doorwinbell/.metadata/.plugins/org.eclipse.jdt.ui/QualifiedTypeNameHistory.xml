@@ -58,4 +58,5 @@
     <fullyQualifiedTypeName name="com.practice2.model.entity.Rectangle"/>
     <fullyQualifiedTypeName name="com.practice2.model.entity.Point"/>
     <fullyQualifiedTypeName name="com.practice2.model.entity.Circle"/>
+    <fullyQualifiedTypeName name="javax.annotation.processing.AbstractProcessor"/>
 </qualifiedTypeNameHistroy>
