@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Inventory"/>
 			<item value="package test.controller;"/>
 			<item value="package test.loop;"/>
 			<item value="package logic.testswitch;"/>
@@ -20,7 +21,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="479"/>
+		<item key="DIALOG_X_ORIGIN" value="441"/>
 		<item key="DIALOG_Y_ORIGIN" value="259"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
