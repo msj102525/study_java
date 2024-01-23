@@ -20,9 +20,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\java\study_java\doorwinbell"/>
 			<item value="C:\Users\ok\Desktop\doorwinbell\java\study_java\doorwinbell"/>
 			<item value="D:\java\study_java"/>
-			<item value="D:\java\study_java\doorwinbell"/>
 			<item value="D:\java\study_java\doorwinbell\objectArrayPractice1"/>
 			<item value="D:\java\study_java\teacher\LoopSilsub"/>
 			<item value="D:\java\study_java\doorwinbell\variableTestProject"/>
