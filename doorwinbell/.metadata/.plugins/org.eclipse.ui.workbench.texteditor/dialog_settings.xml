@@ -8,6 +8,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package test.string;"/>
+			<item value="`"/>
 			<item value="Inventory"/>
 			<item value="package test.controller;"/>
 			<item value="package test.loop;"/>
