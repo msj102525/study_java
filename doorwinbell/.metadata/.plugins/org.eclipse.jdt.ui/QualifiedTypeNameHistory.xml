@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="test.sample.CastingSample"/>
-    <fullyQualifiedTypeName name="cast.practice.CastingSample"/>
-    <fullyQualifiedTypeName name="string.input.StringInputSample"/>
-    <fullyQualifiedTypeName name="operator.sample.OperatorSample"/>
-    <fullyQualifiedTypeName name="java.lang.Byte"/>
-    <fullyQualifiedTypeName name="java.text.StringCharacterIterator"/>
-    <fullyQualifiedTypeName name="test.operator.Example"/>
-    <fullyQualifiedTypeName name="operator.sample.BitOperator"/>
     <fullyQualifiedTypeName name="logic.testif.IfElseSample"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.multi.MultiButtonUI"/>
     <fullyQualifiedTypeName name="logic.testif.MultiIfSample"/>
@@ -55,9 +47,17 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="my.exception.NotDivideZeroException"/>
+    <fullyQualifiedTypeName name="exception.silsub1.CharCheckException"/>
+    <fullyQualifiedTypeName name="exception.silsub1.NumberRangeException"/>
+    <fullyQualifiedTypeName name="exception.silsub1.NumberProcess"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.week4.ExampleString"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 </qualifiedTypeNameHistroy>
