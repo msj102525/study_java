@@ -8,6 +8,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package day20.silsub2;"/>
+			<item value="package test.objectio;"/>
 			<item value="package test.string;"/>
 			<item value="`"/>
 			<item value="Inventory"/>
