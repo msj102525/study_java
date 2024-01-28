@@ -1,39 +1,28 @@
 package day20.silsub3;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class Book {
+public class Book implements Serializable {
 	private String title;
 	private String author;
 	private int price;
 	private Calendar dates;
 	private double discountRate;
 
-	//
-	public void Bood() {
+	public Book() {
 	}
 
 	public Book(String title, String author, int price, Calendar dates, double discountRate) {
-		super();
 		this.title = title;
 		this.author = author;
 		this.price = price;
 		this.dates = new GregorianCalendar();
 		this.discountRate = discountRate;
 	}
-	public Book(String title, String author, int price,  double discountRate) {
-		super();
-		this.title = title;
-		this.author = author;
-		this.price = price;
-		this.discountRate = discountRate;
-	}
-	
-	
 
-	//
 	public String getTitle() {
 		return title;
 	}
@@ -82,5 +71,4 @@ public class Book {
 		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", dates=" + formatDate
 				+ ", discountRate=" + discountRate + "]";
 	}
-
 }
