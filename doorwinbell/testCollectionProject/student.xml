@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>학생 성적 결과</comment>
+<entry key="1">1, 홍길동, 80, 90, 85, 255, 85</entry>
+<entry key="12">12, 김철수, 70, 75, 83, 228, 76</entry>
+<entry key="23">23, 이순신, 100, 100, 100, 300, 100</entry>
+<entry key="5">5, 박문수, 78, 85, 85, 248, 82</entry>
+<entry key="27">27, 최영, 95, 85, 90, 270, 90</entry>
+</properties>

@@ -10,6 +10,7 @@ public class TestProperties {
 		TestProperties test4 = new TestProperties();
 		
 		Student[] sr = test4.readFile();
+
 		test4.printConsole(sr);
 		test4.saveXMLFile(sr);
 	}
@@ -64,9 +65,9 @@ public class TestProperties {
 		
 //		2. 각 객체의 국어합계, 영어합계, 수학합계를 구하고
 //		3. 과목별 평균점수를 출력함
-		System.out.println("전체 국어 평균 : " + totKor / sr.length);
-		System.out.println("전체 영어 평균 : " + totEng / sr.length);
-		System.out.println("전체 수학 평균 : " + totMat / sr.length);
+		System.out.println("전체 국어 평균 : " + (double)totKor / sr.length);
+		System.out.println("전체 영어 평균 : " + (double)totEng / sr.length);
+		System.out.println("전체 수학 평균 : " + (double)totMat / sr.length);
 	}
 	
 	public void saveXMLFile(Student[] sr){
