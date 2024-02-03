@@ -253,33 +253,33 @@ public class BoardManager {
 		}
 	}
 
-//	public void sortMap(int item, boolean isDesc) {
-//		TreeMap tmap = new TreeMap<>(bmap);
-//		Object[] objs = bmap.values().toArray();
-//
-//		System.out.println(item + " " + isDesc);
-//
-//		if (item == 1) {
-//			tmap.comparator();
-//			if (isDesc) {
-//			} else {
-//				new AscBoardNo();
-//			}
-//		} else if (item == 2) {
-//			if (isDesc) {
-//				new DescBoardDate();
-//			} else {
-//				new AscBoardDate();
-//			}
-//		} else if (item == 3) {
-//			if (!isDesc) {
-//				new AscBoardTitle();
-//			} else {
-//				new DescBoardTitle();
-//			}
-//		} else {
-//			return;
-//		}
+	public void sortMap(int item, boolean isDesc) {
+		TreeMap tmap = new TreeMap<>(bmap);
+		Object[] objs = bmap.values().toArray();
+
+		System.out.println(item + " " + isDesc);
+
+		if (item == 1) {
+			tmap.comparator();
+			if (isDesc) {
+			} else {
+				new AscBoardNo();
+			}
+		} else if (item == 2) {
+			if (isDesc) {
+				new DescBoardDate();
+			} else {
+				new AscBoardDate();
+			}
+		} else if (item == 3) {
+			if (!isDesc) {
+				new AscBoardTitle();
+			} else {
+				new DescBoardTitle();
+			}
+		} else {
+			return;
+		}
 
 	}
 }
