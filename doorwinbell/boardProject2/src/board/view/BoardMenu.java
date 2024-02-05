@@ -60,7 +60,7 @@ public class BoardMenu {
 				bManager.saveListFile();
 				break;
 			case 9:
-//				bManager.sortSubMenu();
+				bManager.sortSubMenu();
 				break;
 			case 10:
 				System.out.println("종료");

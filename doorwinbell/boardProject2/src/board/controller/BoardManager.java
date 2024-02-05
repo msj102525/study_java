@@ -254,32 +254,65 @@ public class BoardManager {
 	}
 
 	public void sortMap(int item, boolean isDesc) {
-		TreeMap tmap = new TreeMap<>(bmap);
-		Object[] objs = bmap.values().toArray();
-
 		System.out.println(item + " " + isDesc);
 
 		if (item == 1) {
-			tmap.comparator();
 			if (isDesc) {
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new DescBoardNo());
+				System.out.println("내림");
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			} else {
-				new AscBoardNo();
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new AscBoardNo());
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			}
 		} else if (item == 2) {
 			if (isDesc) {
-				new DescBoardDate();
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new DescBoardDate());
+				System.out.println("내림");
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			} else {
-				new AscBoardDate();
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new AscBoardDate());
+				System.out.println("내림");
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			}
 		} else if (item == 3) {
-			if (!isDesc) {
-				new AscBoardTitle();
+			if (isDesc) {
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new AscBoardTitle());
+				System.out.println("내림");
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			} else {
-				new DescBoardTitle();
+				TreeMap<Integer, Board> treeMap = new TreeMap<>(new DescBoardTitle());
+				System.out.println("내림");
+				for (Board board : bmap.values()) {
+					treeMap.put(board.getBoardNo(), board);
+				}
+				bmap.clear();
+				bmap.putAll(treeMap);
 			}
 		} else {
 			return;
 		}
-
+		saveListFile();
+		displayAllMaps();
 	}
 }
