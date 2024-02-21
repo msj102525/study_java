@@ -1,0 +1,36 @@
+DROP TABLE BOOK;
+
+CREATE TABLE BOOK (
+    book_id NUMBER CONSTRAINT PK_BOOKID PRIMARY KEY,
+    title VARCHAR2(50) NOT NULL,
+    author VARCHAR2(50) NOT NULL,
+    publisher VARCHAR2(20) NOT NULL,
+    publish_date DATE NOT NULL,
+    price NUMBER NOT NULL
+);
+
+COMMENT ON COLUMN BOOK.book_id IS 'seq_bid 시퀀스로 번호발생 처리';
+COMMENT ON COLUMN BOOK.title IS '책제목';
+COMMENT ON COLUMN BOOK.author IS '저자명';
+COMMENT ON COLUMN BOOK.publisher IS '출판사';
+COMMENT ON COLUMN BOOK.publish_date IS '출판날짜';
+COMMENT ON COLUMN BOOK.price IS '가격';
+
+
+DROP SEQUENCE seq_bid;
+
+CREATE SEQUENCE seq_bid
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOCYCLE
+NOCACHE;
+
+TRUNCATE TABLE BOOK;
+
+INSERT INTO BOOK VALUES(seq_bid.nextval, '책제목1', '저자1', '출판사1', TO_DATE('1991/01/02', 'RR/MM/DD'), 10000);
+INSERT INTO BOOK VALUES(seq_bid.nextval, '책제목2', '저자2', '출판사2', TO_DATE('1991/01/02', 'RR/MM/DD'), 20000);
+INSERT INTO BOOK VALUES(seq_bid.nextval, '책제목3', '저자3', '출판사3', TO_DATE('1991/01/03', 'RR/MM/DD'), 30000);
+SELECT * FROM BOOK;
+
+COMMIT;
